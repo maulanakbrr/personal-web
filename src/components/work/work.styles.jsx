@@ -32,7 +32,7 @@ export const WorkImage = styled.img`
   width: 100%;
   object-fit: cover;
   &:hover {
-    opacity: .8;
+    opacity: .75;
   }
 `;
 
