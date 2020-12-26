@@ -27,8 +27,11 @@ const CustomNavbar = () => {
             <Navbar.Brand style={styles}>MLBR</Navbar.Brand>
             <Nav>
                 <NavLink to='/' style={styles}>Home</NavLink>
-                <NavLink to='/work' style={styles}>Work</NavLink>
-                <NavLink to='/blog' style={styles}>Blog</NavLink>
+                <NavLink to='/profile' style={styles}>Profile</NavLink>
+                <NavLink to='/professional' style={styles}>Professional</NavLink>
+                <NavLink to='/portfolio' style={styles}>Portfolio</NavLink>
+                <NavLink to='/experience' style={styles}>Experience</NavLink>
+                <NavLink to='/contact' style={styles}>Contact</NavLink>
             </Nav>
         </NavbarContainer>
     );
