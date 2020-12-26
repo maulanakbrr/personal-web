@@ -1,23 +1,20 @@
-import {
-  Container, Row, Col
-} from 'react-bootstrap';
-
-import {
-  FaInstagram, FaTwitter, FaGithub
-} from 'react-icons/fa';
-
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
+import Fade from 'react-reveal/Fade';
 import {
   ProfileContainer, ProfileImageContainer, Image, Title, Desc, IconsContainer, Icon
 } from './profile.styles';
 
 const Profile = () => {
   return (
-    <ProfileContainer>
+    <ProfileContainer id='profile'> 
       <Row>
         <Col xl={4}>
-          <ProfileImageContainer>
-            <Image src='https://robohash.org/akbar' alt='profile-img' />  
-          </ProfileImageContainer>
+          <Fade left>
+            <ProfileImageContainer>
+              <Image src='https://robohash.org/akbar' alt='profile-img' />  
+            </ProfileImageContainer>
+          </Fade>
         </Col>
         <Col xl={8} className='pt-2'>
           <Container fluid>

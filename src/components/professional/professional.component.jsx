@@ -1,6 +1,5 @@
-import { 
-  Container, Row, Col , ProgressBar
-} from 'react-bootstrap';
+import { Container, Row, Col , ProgressBar } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 import {
   ProfessionalContainer, Title, Desc, SkillContainer, 
   Skill, SkillName, SkillProgress, SkillPercent
@@ -8,7 +7,7 @@ import {
 
 const Professional = () => {
   return(
-    <ProfessionalContainer>
+    <ProfessionalContainer id='professional'>
       <Row>
         <Col xl={4}>
           <Container fluid>
@@ -22,6 +21,7 @@ const Professional = () => {
             </Row>  
           </Container>
         </Col>
+        <Fade right duration={1500}>
         <SkillContainer className='pt-2 pl-3'>
           <Skill>
             <SkillName>Front End </SkillName>
@@ -81,6 +81,7 @@ const Professional = () => {
           </Skill>
           
         </SkillContainer>
+        </Fade>
       </Row>
     </ProfessionalContainer>
   );

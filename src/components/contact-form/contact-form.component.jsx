@@ -14,6 +14,11 @@ const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
     console.log(userData);
+    setUserData({
+      name: '',
+      email: '',
+      message: ''
+    });
   }
 
   const handleChange = event => {

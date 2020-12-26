@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export const NavbarContainer = styled(Navbar)`
   padding-left: 2.5rem;
@@ -9,11 +8,7 @@ export const NavbarContainer = styled(Navbar)`
   color: white;
 `;
 
-export const Nav = styled.div`
-
-`;
-
-export const NavLink = styled(Link)`
-  color: #000;
+export const NavLink = styled(Nav.Link)`
+  color: #fff;
   margin-left: 1rem;
 `;

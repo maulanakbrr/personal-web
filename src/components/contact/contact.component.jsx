@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 import ContactForm from '../contact-form/contact-form.component';
 
@@ -6,7 +7,7 @@ import { ContactContainer, Title, Desc } from './contact.styles';
 
 const Contact = () => {
   return(
-    <ContactContainer>
+    <ContactContainer id='contact'>
       <Row>
         <Col>
           <Container fluid>
@@ -21,7 +22,9 @@ const Contact = () => {
           </Container>
         </Col>
         <Col>
-          <ContactForm/>
+          <Fade>
+            <ContactForm/>
+          </Fade>
         </Col>
       </Row>
     </ContactContainer>
