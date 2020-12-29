@@ -22,7 +22,7 @@ const Professional = () => {
           </Container>
         </Col>
         <Fade right duration={1500}>
-        <SkillContainer className='pt-2 pl-3'>
+        {/* <SkillContainer className='pt-2 pl-3'>
           <Skill>
             <SkillName>Front End </SkillName>
             <SkillProgress>
@@ -37,50 +37,9 @@ const Professional = () => {
             </SkillProgress>
             <SkillPercent>85%</SkillPercent>
           </Skill>
-          <Skill>
-            <SkillName>React Redux </SkillName>
-            <SkillProgress>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName>Express </SkillName>
-            <SkillProgress>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName>SQL </SkillName>
-            <SkillProgress>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName>NoSQL </SkillName>
-            <SkillProgress>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName>Photoshop </SkillName>
-            <SkillProgress>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName>Premiere </SkillName>
-            <SkillProgress>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
-          </Skill>
           
-        </SkillContainer>
+          
+        </SkillContainer> */}
         </Fade>
       </Row>
     </ProfessionalContainer>

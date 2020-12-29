@@ -9,14 +9,14 @@ const Profile = () => {
   return (
     <ProfileContainer id='profile'> 
       <Row>
-        <Col xl={4}>
-          <Fade left>
-            <ProfileImageContainer>
-              <Image src='https://robohash.org/akbar' alt='profile-img' />  
-            </ProfileImageContainer>
-          </Fade>
-        </Col>
-        <Col xl={8} className='pt-2'>
+          <Col xl={4} lg={4} md={6}>
+            <Fade left>
+              <ProfileImageContainer>
+                <Image src='https://robohash.org/akbar' alt='profile image' />  
+              </ProfileImageContainer>
+            </Fade>
+          </Col>
+        <Col xl={8} lg={8} md={6} className='pt-2'>
           <Container fluid>
             <Row>
               <Title>Profile</Title>

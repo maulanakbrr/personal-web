@@ -3,13 +3,13 @@ import Fade from 'react-reveal/Fade';
 
 import ContactForm from '../contact-form/contact-form.component';
 
-import { ContactContainer, Title, Desc } from './contact.styles';
+import { ContactContainer, ContactRow, Title, Desc } from './contact.styles';
 
 const Contact = () => {
   return(
     <ContactContainer id='contact'>
-      <Row>
-        <Col>
+      <ContactRow>
+        <Col lg={6} md={12} className='mb-5'>
           <Container fluid>
             <Row>
               <Title>Contact</Title>
@@ -21,12 +21,12 @@ const Contact = () => {
             </Row>
           </Container>
         </Col>
-        <Col>
+        <Col lg={6} md={12}>
           <Fade>
             <ContactForm/>
           </Fade>
         </Col>
-      </Row>
+      </ContactRow>
     </ContactContainer>
   );
 };

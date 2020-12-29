@@ -7,14 +7,27 @@ export const ProfessionalContainer = styled(Container)`
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 992px) {
+    min-height: 60vh;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 3.5rem;
+  
+  @media screen and (max-width: 992px){
+    font-size: 2.5rem;
+  }
 `;
 
 export const Desc = styled.p`
   font-size: 1.1rem;
+
+  @media screen and (max-width: 992px){
+    font-size: 1rem;
+  }
 `;
 
 export const SkillContainer = styled(Col)`

@@ -7,28 +7,50 @@ export const ProfileContainer = styled(Container)`
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  
+  @media screen and (max-width: 992px) {
+    min-height: 60vh;
+    padding-top: 90px;
+  }
 `;
 
 export const ProfileImageContainer = styled(Row)`
   justify-content: center;
-  align-items: center;
+
 `;
 
 export const Image = styled.img`
   background-color: grey;
   border-radius: 50%;
+  width: auto;
+  height: auto;
+  @media screen and (max-width: 992px){
+    width: 14rem;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 3.5rem;
+  
+  @media screen and (max-width: 992px){
+    font-size: 2.5rem;
+  }
 `;
 
 export const Desc = styled.p`
   font-size: 1.1rem;
+
+  @media screen and (max-width: 992px){
+    font-size: 1rem;
+  }
 `;
 
 export const IconsContainer = styled(Row)`
-  
+  @media screen and (max-width: 575px){
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const Icon = styled.a`

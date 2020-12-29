@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 export const ContactContainer = styled(Container)`
   min-height: 100vh;
@@ -7,6 +7,15 @@ export const ContactContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: 992px){
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  @media screen and (max-width: 767px){
+    padding-top: 80px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -15,4 +24,8 @@ export const Title = styled.h2`
 
 export const Desc = styled.p`
   font-size: 1.1rem;
+`;
+
+export const ContactRow = styled(Row)`
+  
 `;

@@ -4,9 +4,18 @@ import { FaAngleDown } from 'react-icons/fa';
 
 export const HeaderContainer = styled.div`
   position: relative;  
-  height: 100vh;  
+  min-height: 100vh;  
   background-color: grey;
   color: white;
+  width: 100%;
+
+  @media screen and (max-width: 992px){
+    min-height: 60vh;
+  }
+
+  @media screen and (max-width: 576px){
+    min-height: 100vh;
+  }
 `;
 
 export const HeaderImage = styled.div`
@@ -31,10 +40,18 @@ export const HeaderCaption = styled(Container)`
 
 export const Title = styled.h2`
   font-size: 2.5rem;
+
+  @media screen and (max-width: 575px){
+    font-size: 1.8rem;
+  }
 `;
 
 export const Info = styled.p`
   font-size: 1.7rem;
+
+  @media screen and (max-width: 575px){
+    font-size: 1.2rem;
+  }
 `;
 
 export const DownButton = styled(FaAngleDown)`

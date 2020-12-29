@@ -7,6 +7,14 @@ export const WorkContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: 992px){
+    
+  }
+
+  @media screen and (max-width: 767px){
+    padding-top: 90px;
+  }
 `;
 
 export const WorkRow = styled(Row)`
@@ -15,20 +23,35 @@ export const WorkRow = styled(Row)`
 
 export const Title = styled.h2`
   font-size: 3.5rem;
+  
+  @media screen and (max-width: 992px){
+    font-size: 2.5rem;
+  }
 `;
 
 export const Desc = styled.p`
   font-size: 1.1rem;
+
+  @media screen and (max-width: 992px){
+    font-size: 1rem;
+  }
 `;
 
 export const WorkItem = styled(Col)`
   height: 14rem;
   cursor: pointer;
   padding: 0;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 992px){
+    padding: 20px;
+  }
 `;
 
 export const WorkImage = styled.img`
-  height: 12rem;
+  height: 90%;
   width: 100%;
   object-fit: cover;
   &:hover {
@@ -37,10 +60,11 @@ export const WorkImage = styled.img`
 `;
 
 export const WorkTitle = styled.div`
-  width: 100%;
-  height: 2rem;
+  width: 10%;
+  height: 20%;
   font-size: 1.1rem;
   padding-top: .125rem;
+  margin: 0 auto;
   
 `;
 

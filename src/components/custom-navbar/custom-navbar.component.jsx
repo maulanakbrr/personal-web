@@ -1,8 +1,12 @@
 import { useState } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+
 import {
     NavbarContainer,
-    NavLink 
+    NavLink,
+    NavMenu,
+    Menu,
+    MenuBar 
 } from './custom-navbar.styles'
 
 const styles = {
@@ -11,6 +15,7 @@ const styles = {
 
 const CustomNavbar = () => {
     const [navbar, setNavbar] = useState(0);
+    const [menu,setMenu] = useState(true);
 
     const changeBackground = () => {
         if (window.scrollY >= 80) {
@@ -20,20 +25,34 @@ const CustomNavbar = () => {
         }
     };
 
+    const toggleNavMenu = () => {
+        setMenu(!menu);
+        console.log(menu);
+    }
+
     window.addEventListener('scroll', changeBackground);
 
     return (
+        <div className='container'>
         <NavbarContainer fixed='top' className='justify-content-between ' navbar={navbar}>
             <Navbar.Brand style={styles}>MLBR</Navbar.Brand>
-            <Nav>
-                <NavLink href='#header' style={styles}>Home</NavLink>
-                <NavLink href='#profile' style={styles}>Profile</NavLink>
-                <NavLink href='#professional' style={styles}>Professional</NavLink>
-                <NavLink href='#portfolio' style={styles}>Portfolio</NavLink>
-                <NavLink href='#experience' style={styles}>Experience</NavLink>
-                <NavLink href='#contact' style={styles}>Contact</NavLink>
-            </Nav>
+            {
+                menu ? 
+                    <NavMenu>
+                        <NavLink href='#header' style={styles}>Home</NavLink>
+                        <NavLink href='#profile' style={styles}>Profile</NavLink>
+                        <NavLink href='#professional' style={styles}>Professional</NavLink>
+                        <NavLink href='#portfolio' style={styles}>Portfolio</NavLink>
+                        <NavLink href='#experience' style={styles}>Experience</NavLink>
+                        <NavLink href='#contact' style={styles}>Contact</NavLink>
+                    </NavMenu>
+                 : null
+            }
+            <Menu >
+                <MenuBar onClick={toggleNavMenu}/>
+            </Menu>
         </NavbarContainer>
+        </div>
     );
 };
 
