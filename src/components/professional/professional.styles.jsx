@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {
-  Container, Col
+  Container, Col, Row
 } from 'react-bootstrap';
 
 export const ProfessionalContainer = styled(Container)`
@@ -34,27 +34,32 @@ export const SkillContainer = styled(Col)`
   
 `;
 
-export const Skill = styled.div`
+export const Skill = styled(Row)`
   display: flex;
   margin-bottom: 1rem;
   justify-content: space-between;
 `;
 
-export const SkillName = styled.span`
+// export const Skill = styled.div`
+//   display: flex;
+//   margin-bottom: 1rem;
+//   justify-content: space-between;
+// `;
+
+export const SkillName = styled(Col)`
   font-size: 1.1rem;
   font-weight: 500;
   width: 7rem;
   text-align: justify;
 `;
 
-export const SkillProgress = styled.div`
-  width: 30rem;
+export const SkillProgress = styled(Col)`
+  /* width: 30rem; */
   display: inline-block;
-  margin: 0 1rem;
   position: relative;
   margin-top: 6px;
 `;
 
-export const SkillPercent = styled.span`
+export const SkillPercent = styled(Col)`
   font-size: 1.1rem;
 `;

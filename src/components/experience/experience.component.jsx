@@ -1,4 +1,4 @@
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import {
   ExperienceContainer, Title, ExperienceItem

@@ -4,7 +4,7 @@ import { Container, Col } from 'react-bootstrap';
 export const ExperienceContainer = styled(Container)`
   min-height: 100vh;
   display: flex;
-  aling-items: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 
@@ -22,6 +22,7 @@ export const Title = styled.h2`
   margin-bottom: 1rem;
 
   @media screen and (max-width: 992px){
+    font-size: 2.5rem;
     margin-left: 20px;
     padding-top: 50px;
   }

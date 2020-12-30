@@ -8,8 +8,8 @@ import {
 const Professional = () => {
   return(
     <ProfessionalContainer id='professional'>
-      <Row>
-        <Col xl={4}>
+      <Row >
+        <Col lg={4} xs={12}>
           <Container fluid>
             <Row>
               <Title>Professional</Title>    
@@ -21,26 +21,45 @@ const Professional = () => {
             </Row>  
           </Container>
         </Col>
+        <SkillContainer lg={8} xs={12} className='pt-2 pl-3'>
         <Fade right duration={1500}>
-        {/* <SkillContainer className='pt-2 pl-3'>
           <Skill>
-            <SkillName>Front End </SkillName>
-            <SkillProgress>
+            <SkillName xs={3}>Front End</SkillName>
+            <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
+            <SkillPercent xs={1}>85%</SkillPercent>
           </Skill>
           <Skill>
-            <SkillName>Back End </SkillName>
-            <SkillProgress>
+            <SkillName xs={3}>Front End</SkillName>
+            <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent>85%</SkillPercent>
+            <SkillPercent xs={1}>85%</SkillPercent>
           </Skill>
-          
-          
-        </SkillContainer> */}
+          <Skill>
+            <SkillName xs={3}>Front End</SkillName>
+            <SkillProgress xs={8}>
+              <ProgressBar now={85}/>
+            </SkillProgress>
+            <SkillPercent xs={1}>85%</SkillPercent>
+          </Skill>
+          <Skill>
+            <SkillName xs={3}>Front End</SkillName>
+            <SkillProgress xs={8}>
+              <ProgressBar now={85}/>
+            </SkillProgress>
+            <SkillPercent xs={1}>85%</SkillPercent>
+          </Skill>
+          <Skill>
+            <SkillName xs={3}>Front End</SkillName>
+            <SkillProgress xs={8}>
+              <ProgressBar now={85}/>
+            </SkillProgress>
+            <SkillPercent xs={1}>85%</SkillPercent>
+          </Skill>
         </Fade>
+        </SkillContainer>
       </Row>
     </ProfessionalContainer>
   );
