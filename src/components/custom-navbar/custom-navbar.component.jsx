@@ -30,7 +30,7 @@ const CustomNavbar = () => {
             <NavbarBrand style={styles}>MLBR</NavbarBrand>
             
             <NavMenu>
-                <NavLink href='#header' style={styles}>Home</NavLink>
+                <NavLink href='#home' style={styles}>Home</NavLink>
                 <NavLink href='#profile' style={styles}>Profile</NavLink>
                 <NavLink href='#professional' style={styles}>Professional</NavLink>
                 <NavLink href='#portfolio' style={styles}>Portfolio</NavLink>

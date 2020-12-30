@@ -4,7 +4,7 @@ import {
 
 const Header = () => {
   return(
-    <HeaderContainer id='header'>
+    <HeaderContainer id='home'>
       <HeaderImage style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/profile-2.jpg'})`}}/>
       <HeaderCaption>
         <Title>
