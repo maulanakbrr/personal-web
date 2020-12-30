@@ -10,7 +10,7 @@ export const ContactContainer = styled(Container)`
 
   @media screen and (max-width: 992px){
     margin-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 90px;
   }
 
   @media screen and (max-width: 767px){

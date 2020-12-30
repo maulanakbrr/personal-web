@@ -8,12 +8,12 @@ export const WorkContainer = styled(Container)`
   justify-content: center;
   flex-direction: column;
 
-  @media screen and (max-width: 992px){
-    
+  @media screen and (max-width: 991px){
+    padding-top: 90px;
   }
 
   @media screen and (max-width: 767px){
-    padding-top: 90px;
+    padding-top: 80px;
   }
 `;
 

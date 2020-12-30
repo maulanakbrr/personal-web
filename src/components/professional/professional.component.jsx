@@ -24,40 +24,48 @@ const Professional = () => {
         <SkillContainer lg={8} xs={12} className='pt-2 pl-3'>
         <Fade right duration={1500}>
           <Skill>
-            <SkillName xs={3}>Front End</SkillName>
+            <SkillName md={3} xs={2}>Front End</SkillName>
             <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent xs={1}>85%</SkillPercent>
+            <SkillPercent md={1} xs={2}>85%</SkillPercent>
           </Skill>
           <Skill>
-            <SkillName xs={3}>Front End</SkillName>
+            <SkillName md={3} xs={2}>Front End</SkillName>
             <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent xs={1}>85%</SkillPercent>
+            <SkillPercent md={1} xs={2}>85%</SkillPercent>
           </Skill>
           <Skill>
-            <SkillName xs={3}>Front End</SkillName>
+            <SkillName md={3} xs={2}>Front End</SkillName>
             <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent xs={1}>85%</SkillPercent>
+            <SkillPercent md={1} xs={2}>85%</SkillPercent>
           </Skill>
           <Skill>
-            <SkillName xs={3}>Front End</SkillName>
+            <SkillName md={3} xs={2}>Front End</SkillName>
             <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent xs={1}>85%</SkillPercent>
+            <SkillPercent md={1} xs={2}>85%</SkillPercent>
           </Skill>
           <Skill>
-            <SkillName xs={3}>Front End</SkillName>
+            <SkillName md={3} xs={2}>Front End</SkillName>
             <SkillProgress xs={8}>
               <ProgressBar now={85}/>
             </SkillProgress>
-            <SkillPercent xs={1}>85%</SkillPercent>
+            <SkillPercent md={1} xs={2}>85%</SkillPercent>
           </Skill>
+          <Skill>
+            <SkillName md={3} xs={2}>Front End</SkillName>
+            <SkillProgress xs={8}>
+              <ProgressBar now={85}/>
+            </SkillProgress>
+            <SkillPercent md={1} xs={2}>85%</SkillPercent>
+          </Skill>
+          
         </Fade>
         </SkillContainer>
       </Row>

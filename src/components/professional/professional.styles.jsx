@@ -9,8 +9,11 @@ export const ProfessionalContainer = styled(Container)`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 992px) {
-    min-height: 60vh;
+  @media screen and (max-width: 767px) {
+    min-height: 70vh;
+    padding-top: 90px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 `;
 

@@ -9,7 +9,7 @@ export const ProfileContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 767px) {
     min-height: 60vh;
     padding-top: 90px;
   }

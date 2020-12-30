@@ -8,11 +8,15 @@ export const ExperienceContainer = styled(Container)`
   justify-content: center;
   flex-direction: column;
 
+  @media screen and (max-width: 992px){
+    padding-top: 50px;
+  }
+  
   @media screen and (max-width: 767px){
     padding-top: 90px;
   }
 
-  @media screen and (max-width: 575px){
+  @media screen and (max-width: 576px){
     padding-top: 50px;
   }
 `;
