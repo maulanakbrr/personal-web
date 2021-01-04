@@ -1,5 +1,5 @@
 import {
-  HeaderContainer, HeaderImage, HeaderCaption, Title, Info, DownButton
+  HeaderContainer, HeaderImage, HeaderCaption, HeaderTitle, HeaderInfo, DownButton
 } from './header.styles';
 
 const Header = () => {
@@ -7,14 +7,13 @@ const Header = () => {
     <HeaderContainer id='home'>
       <HeaderImage style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/profile-2.jpg'})`}}/>
       <HeaderCaption>
-        <Title>
+        <HeaderTitle>
           Maulana Akbar
-        </Title>
-        <Info>Web Developer and Full Stack JS</Info>
+        </HeaderTitle>
+        <HeaderInfo>Web Developer and Full Stack JS</HeaderInfo>
         <a href="#profile">
           <DownButton/>
         </a>
-        
       </HeaderCaption>
     </HeaderContainer>
     

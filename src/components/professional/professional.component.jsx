@@ -1,72 +1,45 @@
 import { Container, Row, Col , ProgressBar } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+
 import {
-  ProfessionalContainer, Title, Desc, SkillContainer, 
+  ProfessionalContainer, ProfessionalTitle, ProfessionalDesc, SkillContainer, 
   Skill, SkillName, SkillProgress, SkillPercent
 } from './professional.styles';
 
+import DATA from './professional.data';
+
 const Professional = () => {
+  const skillData = DATA;
+
   return(
     <ProfessionalContainer id='professional'>
       <Row >
         <Col lg={4} xs={12}>
           <Container fluid>
             <Row>
-              <Title>Professional</Title>    
+              <ProfessionalTitle>Professional</ProfessionalTitle>    
             </Row>
             <Row>
-              <Desc className='text-justify'>
+              <ProfessionalDesc className='text-justify'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi illum possimus nesciunt harum dolore omnis dolorum.
-              </Desc>
+              </ProfessionalDesc>
             </Row>  
           </Container>
         </Col>
         <SkillContainer lg={8} xs={12} className='pt-2 pl-3'>
-        <Fade right duration={1500}>
-          <Skill>
-            <SkillName md={3} xs={2}>Front End</SkillName>
-            <SkillProgress xs={8}>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent md={1} xs={2}>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName md={3} xs={2}>Front End</SkillName>
-            <SkillProgress xs={8}>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent md={1} xs={2}>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName md={3} xs={2}>Front End</SkillName>
-            <SkillProgress xs={8}>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent md={1} xs={2}>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName md={3} xs={2}>Front End</SkillName>
-            <SkillProgress xs={8}>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent md={1} xs={2}>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName md={3} xs={2}>Front End</SkillName>
-            <SkillProgress xs={8}>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent md={1} xs={2}>85%</SkillPercent>
-          </Skill>
-          <Skill>
-            <SkillName md={3} xs={2}>Front End</SkillName>
-            <SkillProgress xs={8}>
-              <ProgressBar now={85}/>
-            </SkillProgress>
-            <SkillPercent md={1} xs={2}>85%</SkillPercent>
-          </Skill>
-          
-        </Fade>
+          <Fade right duration={1500}>
+            {
+              skillData.map((item, idx) => (
+                <Skill key={idx}>
+                  <SkillName lg={3} md={3} sm={3} xs={12}>{item.skillName}</SkillName>
+                  <SkillProgress lg={8} md={8} sm={7} xs={9}>
+                    <ProgressBar now={item.percent}/>
+                  </SkillProgress>
+                  <SkillPercent md={1} xs={3}>{item.percent}%</SkillPercent>
+                </Skill>
+              ))
+            }
+          </Fade>
         </SkillContainer>
       </Row>
     </ProfessionalContainer>

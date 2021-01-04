@@ -5,20 +5,16 @@ import Work from '../../components/work/work.component';
 import Experience from '../../components/experience/experience.component';
 import Contact from '../../components/contact/contact.component';
 
-import {
-  HomePageContainer
-} from './homepage.styles';
-
 const HomePage = () => {
   return (
-    <HomePageContainer>
+    <div>
       <Header/>
       <Profile/>
       <Professional/>
       <Work/>
       <Experience/>
       <Contact/>
-    </HomePageContainer>
+    </div>
   );
 };
 

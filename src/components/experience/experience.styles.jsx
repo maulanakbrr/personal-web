@@ -21,19 +21,30 @@ export const ExperienceContainer = styled(Container)`
   }
 `;
 
-export const Title = styled.h2`
+export const ExpTitle = styled.h2`
   font-size: 3.5rem;
   margin-bottom: 2rem;
-
+  width: 100%;
+  text-align: justify;
+  
   @media screen and (max-width: 992px){
     font-size: 2.5rem;
-    margin-left: 20px;
     padding-top: 50px;
+  }
+
+  @media screen and (max-width: 767px){
+    text-align: center;
   }
 `;
 
 export const ExperienceItem = styled(Col)`
+  text-align: justify;
+
   @media screen and (max-width: 992px){
     padding: 20px;
+  }
+
+  @media screen and (max-width: 767px){
+    text-align: center;
   }
 `;

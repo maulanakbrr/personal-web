@@ -17,15 +17,21 @@ export const ProfessionalContainer = styled(Container)`
   }
 `;
 
-export const Title = styled.h2`
+export const ProfessionalTitle = styled.h2`
   font-size: 3.5rem;
+  width: 100%;
+  text-align: justify;
   
   @media screen and (max-width: 992px){
     font-size: 2.5rem;
   }
+
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 `;
 
-export const Desc = styled.p`
+export const ProfessionalDesc = styled.p`
   font-size: 1.1rem;
 
   @media screen and (max-width: 992px){

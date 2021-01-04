@@ -38,7 +38,7 @@ export const HeaderCaption = styled(Container)`
   
 `;
 
-export const Title = styled.h2`
+export const HeaderTitle = styled.h2`
   font-size: 2.5rem;
 
   @media screen and (max-width: 575px){
@@ -46,7 +46,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Info = styled.p`
+export const HeaderInfo = styled.p`
   font-size: 1.7rem;
 
   @media screen and (max-width: 575px){

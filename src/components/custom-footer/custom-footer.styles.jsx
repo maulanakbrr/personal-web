@@ -9,6 +9,10 @@ export const Footer = styled(Navbar)`
   align-items: center;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+
+  @media screen and (max-width: 418px){
+    flex-direction: column;
+  }
 `;
 
 export const FooterBrand = styled(Navbar.Brand)`

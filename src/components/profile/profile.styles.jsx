@@ -30,15 +30,21 @@ export const Image = styled.img`
   }
 `;
 
-export const Title = styled.h2`
+export const ProfileTitle = styled.h2`
+  width: 100%;
   font-size: 3.5rem;
+  text-align: justify;
   
   @media screen and (max-width: 992px){
     font-size: 2.5rem;
   }
+
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 `;
 
-export const Desc = styled.p`
+export const ProfileDesc = styled.p`
   font-size: 1.1rem;
 
   @media screen and (max-width: 992px){
@@ -47,7 +53,7 @@ export const Desc = styled.p`
 `;
 
 export const IconsContainer = styled(Row)`
-  @media screen and (max-width: 575px){
+  @media screen and (max-width: 768px){
     display: flex;
     justify-content: center;
   }

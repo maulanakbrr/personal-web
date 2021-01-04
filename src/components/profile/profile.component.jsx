@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import {
-  ProfileContainer, ProfileImageContainer, Image, Title, Desc, IconsContainer, Icon
+  ProfileContainer, ProfileImageContainer, Image, ProfileTitle, ProfileDesc, IconsContainer, Icon
 } from './profile.styles';
 
 const Profile = () => {
@@ -19,21 +19,21 @@ const Profile = () => {
         <Col xl={8} lg={8} md={6} className='pt-2'>
           <Container fluid>
             <Row>
-              <Title>Profile</Title>
+              <ProfileTitle>Profile</ProfileTitle>
             </Row>
             <Row>
-              <Desc className='text-justify'>
+              <ProfileDesc className='text-justify'>
                 Dolor deserunt laboris duis id veniam consequat aliquip et culpa amet eiusmod irure duis. Ad ullamco dolore dolore sunt ullamco ullamco fugiat labore. Adipisicing sunt quis duis nostrud laborum exercitation aute ipsum labore dolor voluptate tempor. Magna voluptate ad culpa irure voluptate velit dolore. Esse excepteur laborum elit sit ipsum. Enim reprehenderit cillum officia elit exercitation culpa magna in pariatur aute dolor commodo esse id. Quis ipsum exercitation consequat sunt.
-              </Desc>
+              </ProfileDesc>
             </Row>
             <IconsContainer>
-              <Icon href=''>
+              <Icon href='https://www.instagram.com/maulanakbrr/' target='_blank'>
                 <FaInstagram/>
               </Icon>
-              <Icon>
+              <Icon href='https://twitter.com/livewtme' target='_blank'>
                 <FaTwitter/>
               </Icon>
-              <Icon>
+              <Icon href='https://github.com/maulanakbrr' target='_blank'>
                 <FaGithub/>
               </Icon>
             </IconsContainer>
