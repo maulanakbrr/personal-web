@@ -15,7 +15,7 @@ const CustomNavbar = () => {
     const [navbar, setNavbar] = useState(0);
 
     const changeBackground = () => {
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 60) {
             setNavbar(1);
         } else {
             setNavbar(0);

@@ -6,6 +6,7 @@ import Experience from '../../components/experience/experience.component';
 import Contact from '../../components/contact/contact.component';
 
 const HomePage = () => {
+  
   return (
     <div>
       <Header/>
