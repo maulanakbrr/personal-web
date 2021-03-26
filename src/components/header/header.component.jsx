@@ -10,7 +10,7 @@ const Header = () => {
         <HeaderTitle>
           Maulana Akbar
         </HeaderTitle>
-        <HeaderInfo>Web Developer and Full Stack JS</HeaderInfo>
+        <HeaderInfo>Front End Developer</HeaderInfo>
         <a href="#profile">
           <DownButton/>
         </a>

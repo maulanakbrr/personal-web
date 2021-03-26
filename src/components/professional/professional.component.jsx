@@ -21,7 +21,7 @@ const Professional = () => {
             </Row>
             <Row>
               <ProfessionalDesc className='text-justify'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi illum possimus nesciunt harum dolore omnis dolorum.
+                I'm capable using react and redux for building web app. I also know how to build web app using MERN stack and PERN stack. I can build reusable code and components for future use.
               </ProfessionalDesc>
             </Row>  
           </Container>

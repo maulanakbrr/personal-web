@@ -40,11 +40,11 @@ export const Desc = styled.p`
 export const WorkItem = styled(Col)`
   height: 14rem;
   cursor: pointer;
-  padding: 0;
+  padding: 10px;
   justify-content: center;
   width: 100%;
   margin-bottom: 30px;
-
+  
   @media screen and (max-width: 992px){
     padding: 20px;
   }
@@ -54,17 +54,18 @@ export const WorkImage = styled.img`
   height: 90%;
   width: 100%;
   object-fit: cover;
+  box-shadow: 2px 4px 10px #888888;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
   &:hover {
     opacity: .75;
   }
 `;
 
 export const WorkTitle = styled.div`
-  width: 10%;
   height: 20%;
   font-size: 1.1rem;
   padding-top: .125rem;
-  margin: 0 auto;
-  
 `;
 

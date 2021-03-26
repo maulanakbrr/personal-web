@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import {
   ProfileContainer, ProfileImageContainer, Image, ProfileTitle, ProfileDesc, IconsContainer, Icon
@@ -23,7 +23,7 @@ const Profile = () => {
             </Row>
             <Row>
               <ProfileDesc className='text-justify'>
-                Dolor deserunt laboris duis id veniam consequat aliquip et culpa amet eiusmod irure duis. Ad ullamco dolore dolore sunt ullamco ullamco fugiat labore. Adipisicing sunt quis duis nostrud laborum exercitation aute ipsum labore dolor voluptate tempor. Magna voluptate ad culpa irure voluptate velit dolore. Esse excepteur laborum elit sit ipsum. Enim reprehenderit cillum officia elit exercitation culpa magna in pariatur aute dolor commodo esse id. Quis ipsum exercitation consequat sunt.
+              Recent bachelor's degree recipient with a background in information technology. Over 2 years of experience working on freelance web developer and skilled in HTML, CSS and JavaScript. I have a good adaptability that makes me can live in new surrounding. I like to learn something new and I'm also a fast learner. Currently still honing my skills and getting deeper with MERN stack. I love to meet new people and know each other. If your hobby is playing guitar, I think we can make a band together. 
               </ProfileDesc>
             </Row>
             <IconsContainer>
@@ -35,6 +35,9 @@ const Profile = () => {
               </Icon>
               <Icon href='https://github.com/maulanakbrr' target='_blank'>
                 <FaGithub/>
+              </Icon>
+              <Icon href='https://github.com/maulanakbrr' target='_blank'>
+                <FaLinkedin/>
               </Icon>
             </IconsContainer>
           </Container>
