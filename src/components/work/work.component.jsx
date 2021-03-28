@@ -1,31 +1,48 @@
 import { Col, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { WorkContainer, WorkRow, Title, Desc,
+import { WorkContainer, Title, Desc,
   WorkItem, WorkImage, WorkTitle 
 } from './work.styles';
 
 const Work = () => {
   return(
     <WorkContainer id='portfolio'>
-      <Row>
+      <Row className='mb-4'>
         <Col>
           <Title>Portfolio</Title>
-          <Desc>My latest works. See more</Desc>
+          <Desc>See my latest works. <a href="https://github.com/maulanakbrr" target='_blank' rel="noreferrer">Click here to see more on github.</a></Desc>
         </Col>
       </Row>
       <Fade top delay={200} duration={1300}>
         <Row className='mr-0 ml-0'>
-          <WorkItem md={4} sm={12}>
-            <WorkImage src={process.env.PUBLIC_URL + '/images/mlbr.jpg'} alt=""/>
+          <WorkItem md={4}>
+            <a href="http://mlbr.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <WorkImage src={process.env.PUBLIC_URL + '/images/mlbr.jpg'} alt=""/>
+            </a>
             <WorkTitle>MLBR</WorkTitle>
+            <p className='text-center my-2'>
+              My personal website
+            </p>
           </WorkItem>
-          <WorkItem md={4} sm={12}>
-            <WorkImage src={process.env.PUBLIC_URL + '/images/krown.jpg'} alt=""/>
-            <WorkTitle>Krown-Apparel</WorkTitle>
-          </WorkItem>
-          <WorkItem md={4} sm={12}>
-            <WorkImage src={process.env.PUBLIC_URL + '/images/rollogreen.jpg'} alt=""/>
+
+          <WorkItem md={4}>
+            <a href="https://rollogreen.com/" target="_blank" rel="noopener noreferrer">
+              <WorkImage src={process.env.PUBLIC_URL + '/images/rollogreen.jpg'} alt=""/>
+            </a>
             <WorkTitle>Rollogreen</WorkTitle>
+            <p className='text-center my-2'>
+              Website to sell lands and houses 
+            </p>
+          </WorkItem>
+
+          <WorkItem md={4}>
+            <a href="https://krown-apparel.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <WorkImage src={process.env.PUBLIC_URL + '/images/krown.jpg'} alt=""/>
+            </a>
+            <WorkTitle>Krown-Apparel</WorkTitle>
+            <p className='text-center my-2'>
+              My personal website
+            </p>
           </WorkItem>
         </Row>
       </Fade>

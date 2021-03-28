@@ -39,18 +39,22 @@ export const HeaderCaption = styled(Container)`
 `;
 
 export const HeaderTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+
+  @media screen and (max-width: 992px){
+    font-size: 2.5rem;
+  }
 
   @media screen and (max-width: 575px){
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 `;
 
 export const HeaderInfo = styled.p`
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 
   @media screen and (max-width: 575px){
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 

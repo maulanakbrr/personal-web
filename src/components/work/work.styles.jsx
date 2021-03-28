@@ -38,12 +38,9 @@ export const Desc = styled.p`
 `;
 
 export const WorkItem = styled(Col)`
-  height: 14rem;
-  cursor: pointer;
-  padding: 10px;
-  justify-content: center;
-  width: 100%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
   
   @media screen and (max-width: 992px){
     padding: 20px;
@@ -57,15 +54,16 @@ export const WorkImage = styled.img`
   box-shadow: 2px 4px 10px #888888;
   border-radius: 15px;
   margin-bottom: 10px;
-
+  
   &:hover {
-    opacity: .75;
+    opacity: .9;
   }
 `;
 
 export const WorkTitle = styled.div`
   height: 20%;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  color: #017cff;
   padding-top: .125rem;
 `;
 

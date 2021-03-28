@@ -8,7 +8,7 @@ const Header = () => {
       <HeaderImage style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/profile-2.jpg'})`}}/>
       <HeaderCaption>
         <HeaderTitle>
-          Maulana Akbar
+          Akbar Maulana
         </HeaderTitle>
         <HeaderInfo>Front End Developer</HeaderInfo>
         <a href="#profile">
