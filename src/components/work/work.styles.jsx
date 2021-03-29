@@ -21,22 +21,6 @@ export const WorkRow = styled(Row)`
   width: 100%;
 `;
 
-export const Title = styled.h2`
-  font-size: 3.5rem;
-  
-  @media screen and (max-width: 992px){
-    font-size: 2.5rem;
-  }
-`;
-
-export const Desc = styled.p`
-  font-size: 1.1rem;
-
-  @media screen and (max-width: 992px){
-    font-size: 1rem;
-  }
-`;
-
 export const WorkItem = styled(Col)`
   margin-bottom: 30px;
   display: flex;
@@ -61,7 +45,6 @@ export const WorkImage = styled.img`
 `;
 
 export const WorkTitle = styled.div`
-  height: 20%;
   font-size: 1.3rem;
   color: #017cff;
   padding-top: .125rem;

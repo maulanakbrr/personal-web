@@ -9,11 +9,11 @@ export const HeaderContainer = styled.div`
   color: white;
   width: 100%;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 991px){
     min-height: 60vh;
   }
 
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 575px){
     min-height: 100vh;
   }
 `;
@@ -41,7 +41,7 @@ export const HeaderCaption = styled(Container)`
 export const HeaderTitle = styled.h2`
   font-size: 3.5rem;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 991px){
     font-size: 2.5rem;
   }
 

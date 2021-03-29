@@ -1,7 +1,11 @@
 import { Col, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { WorkContainer, Title, Desc,
-  WorkItem, WorkImage, WorkTitle 
+
+import {
+  Subtitle, Desc } from '../../App.styles'
+
+import { 
+  WorkContainer, WorkItem, WorkImage, WorkTitle 
 } from './work.styles';
 
 const Work = () => {
@@ -9,7 +13,7 @@ const Work = () => {
     <WorkContainer id='portfolio'>
       <Row className='mb-4'>
         <Col>
-          <Title>Portfolio</Title>
+          <Subtitle>Portfolio</Subtitle>
           <Desc>See my latest works. <a href="https://github.com/maulanakbrr" target='_blank' rel="noreferrer">Click here to see more on github.</a></Desc>
         </Col>
       </Row>
@@ -31,7 +35,8 @@ const Work = () => {
             </a>
             <WorkTitle>Rollogreen</WorkTitle>
             <p className='text-center my-2'>
-              Website to sell lands and houses 
+              Website to sell lands and houses <br/>
+              (Client's project)
             </p>
           </WorkItem>
 
@@ -41,7 +46,7 @@ const Work = () => {
             </a>
             <WorkTitle>Krown-Apparel</WorkTitle>
             <p className='text-center my-2'>
-              My personal website
+              Ecommerce web app for clothing line <br/> (dummy project)
             </p>
           </WorkItem>
         </Row>

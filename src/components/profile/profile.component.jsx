@@ -1,30 +1,31 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
+
+import { Subtitle, Desc } from '../../App.styles';
+
 import {
-  ProfileContainer, ProfileImageContainer, Image, ProfileTitle, ProfileDesc, IconsContainer, Icon
+  ProfileContainer, ProfileImageContainer, ProfileImage, IconsContainer, Icon
 } from './profile.styles';
 
 const Profile = () => {
   return (
     <ProfileContainer id='profile'> 
       <Row>
-          <Col xl={4} lg={4} md={6}>
-            <Fade left>
-              <ProfileImageContainer>
-                <Image src='https://robohash.org/akbar' alt='profile image' />  
-              </ProfileImageContainer>
-            </Fade>
-          </Col>
-        <Col xl={8} lg={8} md={6} className='pt-2'>
+        <Col xl={3} md={3} sm={6}>
+          <Fade left>
+            <ProfileImage src='https://robohash.org/akbar' alt='profile image' fluid/>  
+          </Fade>
+        </Col>
+        <Col xl={9} md={9} sm={6} className='pt-2'>
           <Container fluid>
             <Row>
-              <ProfileTitle>Profile</ProfileTitle>
+              <Subtitle>Profile</Subtitle>
             </Row>
             <Row>
-              <ProfileDesc className='text-justify'>
-              Recent bachelor's degree recipient with a background in information technology. Over 2 years of experience working on freelance web developer and skilled in HTML, CSS and JavaScript. I have a good adaptability that makes me can live in new surrounding. I like to learn something new and I'm also a fast learner. Currently still honing my skills and getting deeper with MERN stack. I love to meet new people and know each other. If your hobby is playing guitar, I think we can make a band together. 
-              </ProfileDesc>
+              <Desc className='text-justify'>
+                Recent bachelor's degree recipient with a background in information technology. Over 2 years of experience working on freelance web developer and skilled in HTML, CSS and JavaScript. I have a good adaptability that makes me can live in new surrounding. I like to learn something new and I'm also a fast learner. Currently still honing my skills and getting deeper with MERN stack. I love to meet new people and know each other. If your hobby is playing guitar, I think we can make a band together. 
+              </Desc>
             </Row>
             <IconsContainer>
               <Icon href='https://www.instagram.com/maulanakbrr/' target='_blank'>
