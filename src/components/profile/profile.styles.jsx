@@ -9,6 +9,20 @@ export const ProfileContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   
+  .profile-title {
+    @media screen and (max-width: 767px){
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+  }
+
+  .profile-desc {
+    @media screen and (max-width: 575px){
+      padding: 0 20px;
+    }
+  }
+
   @media screen and (max-width: 991px) {
     padding-top: 50px;
   }
@@ -19,13 +33,6 @@ export const ProfileContainer = styled(Container)`
   }
 `;
 
-export const ProfileImageContainer = styled(Row)`
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%; */
-`;
-
 export const ProfileImage = styled(Image)`
   background-color: grey;
   border-radius: 50%;
@@ -33,28 +40,6 @@ export const ProfileImage = styled(Image)`
   height: auto;
   @media screen and (max-width: 991px){
     width: 14rem;
-  }
-`;
-
-export const ProfileTitle = styled.h2`
-  width: 100%;
-  font-size: 3.5rem;
-  text-align: justify;
-  
-  @media screen and (max-width: 991px){
-    font-size: 2.5rem;
-  }
-
-  @media screen and (max-width: 767px){
-    text-align: center;
-  }
-`;
-
-export const ProfileDesc = styled.p`
-  font-size: 1rem;
-
-  @media screen and (max-width: 991px){
-    font-size: 1rem;
   }
 `;
 
@@ -72,9 +57,5 @@ export const Icon = styled.a`
 
   @media screen and (max-width: 992px){
     font-size: 1.5rem;
-  }
-
-  &:hover {
-
   }
 `;
