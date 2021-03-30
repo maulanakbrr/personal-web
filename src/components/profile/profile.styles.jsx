@@ -10,6 +10,10 @@ export const ProfileContainer = styled(Container)`
   justify-content: center;
   
   .profile-title {
+    @media screen and (max-width: 991px){
+      margin-top: -10px;
+    }
+    
     @media screen and (max-width: 767px){
       display: flex;
       justify-content: center;
@@ -18,6 +22,11 @@ export const ProfileContainer = styled(Container)`
   }
 
   .profile-desc {
+    
+    @media screen and (max-width: 767px){
+      margin-bottom: 5px;
+    }
+
     @media screen and (max-width: 575px){
       padding: 0 20px;
     }
@@ -28,8 +37,7 @@ export const ProfileContainer = styled(Container)`
   }
 
   @media screen and (max-width: 767px) {
-    min-height: 60vh;
-    padding-top: 90px;
+    padding-top: 50px;
   }
 `;
 
@@ -55,7 +63,11 @@ export const Icon = styled.a`
   margin-right: 2rem;
   color: #000;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 991px){
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 767px){
+    font-size: 1.2rem;
   }
 `;

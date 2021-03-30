@@ -9,6 +9,5 @@ export const Subtitle = styled.h2`
 `;
 
 export const Desc = styled.p`
-  font-size: 1rem
-
+  font-size: 1rem;
 `;
