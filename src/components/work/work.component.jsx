@@ -5,34 +5,34 @@ import {
   Subtitle, Desc } from '../../App.styles'
 
 import { 
-  WorkContainer, WorkItem, WorkImage, WorkTitle 
+  WorkContainer, WorkItem, WorkLink, WorkImage, WorkTitle 
 } from './work.styles';
 
 const Work = () => {
   return(
     <WorkContainer id='portfolio'>
       <Row className='mb-4'>
-        <Col>
+        <Col className='portfolio-head'>
           <Subtitle>Portfolio</Subtitle>
           <Desc>See my latest works. <a href="https://github.com/maulanakbrr" target='_blank' rel="noreferrer">Click here to see more on github.</a></Desc>
         </Col>
       </Row>
       <Fade top delay={200} duration={1300}>
         <Row className='mr-0 ml-0'>
-          <WorkItem md={4}>
-            <a href="http://mlbr.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <WorkItem sm={4}>
+            <WorkLink href="http://mlbr.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <WorkImage src={process.env.PUBLIC_URL + '/images/mlbr.jpg'} alt=""/>
-            </a>
+            </WorkLink>
             <WorkTitle>MLBR</WorkTitle>
             <p className='text-center my-2'>
               My personal website
             </p>
           </WorkItem>
 
-          <WorkItem md={4}>
-            <a href="https://rollogreen.com/" target="_blank" rel="noopener noreferrer">
+          <WorkItem sm={4}>
+            <WorkLink href="https://rollogreen.com/" target="_blank" rel="noopener noreferrer">
               <WorkImage src={process.env.PUBLIC_URL + '/images/rollogreen.jpg'} alt=""/>
-            </a>
+            </WorkLink>
             <WorkTitle>Rollogreen</WorkTitle>
             <p className='text-center my-2'>
               Website to sell lands and houses <br/>
@@ -40,10 +40,10 @@ const Work = () => {
             </p>
           </WorkItem>
 
-          <WorkItem md={4}>
-            <a href="https://krown-apparel.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <WorkItem sm={4}>
+            <WorkLink href="https://krown-apparel.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <WorkImage src={process.env.PUBLIC_URL + '/images/krown.jpg'} alt=""/>
-            </a>
+            </WorkLink>
             <WorkTitle>Krown-Apparel</WorkTitle>
             <p className='text-center my-2'>
               Ecommerce web app for clothing line <br/> (dummy project)

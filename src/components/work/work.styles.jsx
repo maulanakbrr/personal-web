@@ -15,6 +15,12 @@ export const WorkContainer = styled(Container)`
   @media screen and (max-width: 767px){
     padding-top: 80px;
   }
+
+  .portfolio-head {
+    @media screen and (max-width: 575px){
+      padding: 0 15px;
+    }
+  }
 `;
 
 export const WorkRow = styled(Row)`
@@ -31,6 +37,13 @@ export const WorkItem = styled(Col)`
   }
 `;
 
+export const WorkLink = styled.div`
+  @media screen and (max-width: 575px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+`;
+
 export const WorkImage = styled.img`
   height: 90%;
   width: 100%;
@@ -42,11 +55,20 @@ export const WorkImage = styled.img`
   &:hover {
     opacity: .9;
   }
+
 `;
 
 export const WorkTitle = styled.div`
   font-size: 1.3rem;
   color: #017cff;
   padding-top: .125rem;
+
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+
+  @media screen and (max-width: 575px){
+    display: block;
+  }
 `;
 
