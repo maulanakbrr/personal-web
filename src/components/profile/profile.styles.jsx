@@ -39,6 +39,10 @@ export const ProfileContainer = styled(Container)`
   @media screen and (max-width: 767px) {
     padding-top: 50px;
   }
+
+  @media screen and (max-width: 575px){
+    padding-top: 80px;
+  }
 `;
 
 export const ProfileImage = styled(Image)`
@@ -62,6 +66,10 @@ export const Icon = styled.a`
   font-size: 2rem;
   margin-right: 2rem;
   color: #000;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @media screen and (max-width: 991px){
     font-size: 1.5rem;
