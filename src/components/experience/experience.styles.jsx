@@ -4,7 +4,7 @@ import { Container, Col } from 'react-bootstrap';
 export const ExperienceContainer = styled(Container)`
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
 
@@ -19,29 +19,19 @@ export const ExperienceContainer = styled(Container)`
   @media screen and (max-width: 576px){
     padding-top: 50px;
   }
-`;
 
-export const ExpTitle = styled.h2`
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-  width: 100%;
-  text-align: justify;
-  
-  @media screen and (max-width: 992px){
-    font-size: 2.5rem;
-    padding-top: 50px;
-  }
-
-  @media screen and (max-width: 767px){
-    text-align: center;
+  .experience-title {
+    width: 100%;
+    
   }
 `;
 
 export const ExperienceItem = styled(Col)`
   text-align: justify;
+  padding: 0 1rem;
 
   @media screen and (max-width: 992px){
-    padding: 20px;
+    padding: 1rem;
   }
 
   @media screen and (max-width: 767px){

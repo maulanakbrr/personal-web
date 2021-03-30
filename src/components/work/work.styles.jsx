@@ -7,6 +7,7 @@ export const WorkContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 50px;
 
   @media screen and (max-width: 991px){
     padding-top: 90px;

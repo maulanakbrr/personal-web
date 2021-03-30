@@ -1,33 +1,34 @@
 import { Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
+import { Col, Image } from 'react-bootstrap';
+
+import { Subtitle, Desc } from '../../App.styles';
+
 import {
-  ExperienceContainer, ExpTitle, ExperienceItem
+  ExperienceContainer, ExperienceItem
 } from './experience.styles';
 
-import DATA from './experience.data';
-
 const Experience = () => {
-  const expData = DATA;
   
   return(
     <ExperienceContainer id='experience'>
-      <Row style={{ width: '100%' }}>
-        <ExpTitle>Experience</ExpTitle>
-      </Row>
+      <Subtitle className='experience-title text-justify'>Experience</Subtitle>
+
       <Row>
-        {
-          expData.map((item, idx) => (
-            <ExperienceItem key={idx} xl={6} md={6} sm={12} className='pr-4 mb-2'>
-              <Fade bottom delay={100} duration={1400}>
-                <h3>{item.place}</h3>
-                <h6>{item.position}</h6>
-                <span>{item.time}</span>
-                <p>{item.jobDesk}</p>
-              </Fade>
-            </ExperienceItem>
-          ))
-        }
+        <Col >
+          <div md={6} xs={12}>
+            <Image src={process.env.PUBLIC_URL + '/images/eezy_18.svg'} fluid/>
+          </div>
+        </Col>
+        <ExperienceItem md={6} xs={12}>
+          <Fade bottom delay={100} duration={1400}>
+            <h3>Freelance Web Developer</h3>
+            <h6>Self Employed | 2019 - Now</h6>
+            <p>I Work on projects provided by client by applying innovative and creative ideas for each project that is done. Standarized all output with new, responsive mobile first-approach and strategy.</p>
+            <p >Project: pilarjuanda, rollogreen</p>
+          </Fade>
+        </ExperienceItem>
       </Row>
     </ExperienceContainer>
   );
