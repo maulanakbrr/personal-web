@@ -37,7 +37,7 @@ export const ImageBox = styled.div`
   }
 
   @media screen and (max-width: 767px){
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
   }
 `;

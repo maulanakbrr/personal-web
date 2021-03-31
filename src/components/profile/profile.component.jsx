@@ -28,16 +28,16 @@ const Profile = () => {
               </Desc>
             </Row>
             <IconsContainer>
-              <Icon href='https://www.instagram.com/maulanakbrr/' target='_blank'>
+              <Icon href='https://www.instagram.com/maulanakbrr/' target='_blank' rel="noopener noreferrer">
                 <FaInstagram/>
               </Icon>
-              <Icon href='https://twitter.com/livewtme' target='_blank'>
+              <Icon href='https://twitter.com/livewtme' target='_blank' rel="noopener noreferrer">
                 <FaTwitter/>
               </Icon>
-              <Icon href='https://github.com/maulanakbrr' target='_blank'>
+              <Icon href='https://github.com/maulanakbrr' target='_blank' rel="noopener noreferrer">
                 <FaGithub/>
               </Icon>
-              <Icon href='https://github.com/maulanakbrr' target='_blank'>
+              <Icon href='https://www.linkedin.com/in/akbar-maulana-1b8751204/' target='_blank' rel="noopener noreferrer">
                 <FaLinkedin/>
               </Icon>
             </IconsContainer>

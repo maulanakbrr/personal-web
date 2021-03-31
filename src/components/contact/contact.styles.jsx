@@ -7,6 +7,7 @@ export const ContactContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 50px;
 
   @media screen and (max-width: 992px){
     margin-bottom: 50px;
@@ -15,6 +16,12 @@ export const ContactContainer = styled(Container)`
 
   @media screen and (max-width: 767px){
     padding-top: 80px;
+  }
+
+  @media screen and (max-width: 576px){
+    padding-top: 50px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 

@@ -3,25 +3,29 @@ import Fade from 'react-reveal/Fade';
 
 import ContactForm from '../contact-form/contact-form.component';
 
-import { ContactContainer, ContactRow, Title, Desc } from './contact.styles';
+import { Subtitle, Desc } from '../../App.styles';
+
+import { ContactContainer, ContactRow } from './contact.styles';
 
 const Contact = () => {
   return(
     <ContactContainer id='contact'>
       <ContactRow>
-        <Col lg={6} md={12} className='mb-5'>
+        <Col md={6} xs={12} className='mb-5'>
           <Container fluid>
             <Row>
-              <Title>Contact</Title>
-              <Desc className='text-justify'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, consequatur? Suscipit asperiores architecto sint iste illo voluptatibus.</Desc>
-              <div style={{ width: '100%', textAlign: 'justify' }}> 
-                <span>Email: name@example.com</span><br/>
-                <span>Tel: +62 890 2929 2939</span>
+              <Subtitle>Get in touch</Subtitle>
+              <Desc className='text-justify'>
+                There's nothing impossible to build your dream website. Let's make it come true! 
+              </Desc>
+              <div style={{ width: '100%', textAlign: 'justify', fontSize: '1rem'}}> 
+                <span>Email: amaulanaa995@gmail.com</span><br/>
+                <span>Phone: +62 890 2929 2939</span>
               </div>
             </Row>
           </Container>
         </Col>
-        <Col lg={6} md={12}>
+        <Col md={6} xs={12}>
           <Fade>
             <ContactForm/>
           </Fade>
