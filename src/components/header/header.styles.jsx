@@ -35,7 +35,10 @@ export const HeaderCaption = styled(Container)`
   left: 0;
   right: 0;
   padding-bottom: 50px;
-  
+
+  @media screen and (max-width: 575px){
+    padding-bottom: 70px;
+  }
 `;
 
 export const HeaderTitle = styled.h2`

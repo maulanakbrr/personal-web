@@ -17,6 +17,7 @@ export const ExperienceContainer = styled(Container)`
   }
 
   @media screen and (max-width: 576px){
+    margin-top: 20px;
     padding-top: 50px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -52,5 +53,11 @@ export const ExperienceItem = styled(Col)`
 
   @media screen and (max-width: 767px){
     padding-bottom: 0;
+  }
+`;
+
+export const ExperienceJob = styled.h3`
+  @media screen and (max-width: 575px){
+    text-align: left;
   }
 `;

@@ -42,6 +42,7 @@ export const ProfileContainer = styled(Container)`
 
   @media screen and (max-width: 575px){
     padding-top: 80px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -50,8 +51,13 @@ export const ProfileImage = styled(Image)`
   border-radius: 50%;
   width: auto;
   height: auto;
+  
   @media screen and (max-width: 991px){
     width: 14rem;
+  }
+
+  @media screen and (max-width: 575px){
+    width: 10rem;
   }
 `;
 

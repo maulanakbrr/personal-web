@@ -21,7 +21,7 @@ const Work = () => {
         <Row className='mr-0 ml-0'>
           <WorkItem sm={4}>
             <WorkLink href="http://mlbr.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <WorkImage src={process.env.PUBLIC_URL + '/images/mlbr.jpg'} alt=""/>
+              <WorkImage src={process.env.PUBLIC_URL + '/images/mlbr-2.jpg'} alt=""/>
             </WorkLink>
             <WorkTitle>MLBR</WorkTitle>
             <p className='text-center my-2'>
@@ -31,7 +31,7 @@ const Work = () => {
 
           <WorkItem sm={4}>
             <WorkLink href="https://rollogreen.com/" target="_blank" rel="noopener noreferrer">
-              <WorkImage src={process.env.PUBLIC_URL + '/images/rollogreen.jpg'} alt=""/>
+              <WorkImage src={process.env.PUBLIC_URL + '/images/rollogreen-2.jpg'} alt=""/>
             </WorkLink>
             <WorkTitle>Rollogreen</WorkTitle>
             <p className='text-center my-2'>
@@ -42,7 +42,7 @@ const Work = () => {
 
           <WorkItem sm={4}>
             <WorkLink href="https://krown-apparel.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <WorkImage src={process.env.PUBLIC_URL + '/images/krown.jpg'} alt=""/>
+              <WorkImage src={process.env.PUBLIC_URL + '/images/krown-2.jpg'} alt=""/>
             </WorkLink>
             <WorkTitle>Krown-Apparel</WorkTitle>
             <p className='text-center my-2'>

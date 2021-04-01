@@ -17,6 +17,10 @@ export const WorkContainer = styled(Container)`
     padding-top: 80px;
   }
 
+  @media screen and (max-width: 575px){
+    margin-top: 80px;
+  }
+
   .portfolio-head {
     @media screen and (max-width: 575px){
       padding: 0 15px;

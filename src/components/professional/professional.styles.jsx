@@ -18,7 +18,8 @@ export const ProfessionalContainer = styled(Container)`
   }
 
   @media screen and (max-width: 575px){
-    padding: 0 35px;
+    padding: 0px 35px;
+    padding-top: 90px;
   }
 `;
 
