@@ -23,7 +23,7 @@ const Work = () => {
             <WorkTitle>Kopra by Mandiri</WorkTitle>
 
             <p style={{ textAlign: 'justify' }}> 
-              Kopra by Mandiri is wholesale digital super platform. This service is to accommodate the increasingly dynamic needs and ecosystem of wholesale customers, which are the existing core-business of Bank Mandiri. I worked on some features like virtual assistant, feature form registrations and many more.
+              Kopra by Mandiri is wholesale digital super platform. This service is to accommodate the increasingly dynamic needs and ecosystem of wholesale customers, which are the existing core-business of Bank Mandiri. 
             </p>
 
             <a href="https://kopra.bankmandiri.co.id/" target='_blank' rel="noopener noreferrer">

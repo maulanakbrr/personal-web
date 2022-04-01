@@ -35,7 +35,7 @@ const CustomNavbar = () => {
                     <NavLink href='#professional' style={styles}>Professional</NavLink>
                     <NavLink href='#portfolio' style={styles}>Portfolio</NavLink>
                     <NavLink href='#experience' style={styles}>Experience</NavLink>
-                    <NavLink href='#contact' style={styles}>Contact</NavLink>
+                    {/* <NavLink href='#contact' style={styles}>Contact</NavLink> */}
                 </NavMenu>
                     
             </NavbarContainer>

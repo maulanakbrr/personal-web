@@ -56,7 +56,7 @@ export const ExperienceItem = styled(Col)`
   }
 `;
 
-export const ExperienceJob = styled.h3`
+export const ExperienceJob = styled.h5`
   @media screen and (max-width: 575px){
     text-align: left;
   }

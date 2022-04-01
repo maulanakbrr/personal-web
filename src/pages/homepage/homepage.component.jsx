@@ -14,7 +14,7 @@ const HomePage = () => {
       <Professional/>
       <Work/>
       <Experience/>
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   );
 };
