@@ -15,20 +15,35 @@ const Professional = () => {
 
   return(
     <ProfessionalContainer id='professional'>
+      <Subtitle style={{ textAlign: 'left', width: '100%' }}>Skill</Subtitle>
+
       <Row >
-        <Col lg={4} xs={12}>
-          <Container fluid>
-            <Row>
-              <Subtitle>Professional</Subtitle>    
-            </Row>
+        <Col lg={6} xs={12} style={{ textAlign: 'left' }}>
+          <h3>Front-end</h3>
+          <Fade top duration={1500}>
+            <p>
+              HTML, CSS, JavaScript, Sass, Bootstrap, Antd, Semantic, Node.js, React, Next, Redux, Git, npm, Yarn, Vercel, Heroku, styled components
+            </p>
+          </Fade>
+          {/* <Container fluid>
+            
             <Row>
               <Desc className='text-justify'>
                 I'm capable using react and redux for building web app. I also know how to build web app using MERN stack and PERN stack. I can build reusable code and components for future use.
               </Desc>
             </Row>  
-          </Container>
+          </Container> */}
         </Col>
-        <SkillContainer lg={8} xs={12} className='pt-2'>
+
+        <Col lg={6} xs={12} style={{ textAlign: 'left' }}>
+          <h3>Back-end and Database</h3>
+          <Fade top duration={1500}>
+            <p>
+              Express.Js, PostgreSQL, MySQL, MongoDB, REST API
+            </p>
+          </Fade>
+        </Col>
+        {/* <SkillContainer lg={8} xs={12} className='pt-2'>
           <Fade right duration={1500}>
             {
               skillData.map((item, idx) => (
@@ -42,7 +57,7 @@ const Professional = () => {
               ))
             }
           </Fade>
-        </SkillContainer>
+        </SkillContainer> */}
       </Row>
     </ProfessionalContainer>
   );

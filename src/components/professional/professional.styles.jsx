@@ -8,6 +8,7 @@ export const ProfessionalContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding-top: 40px;
 
   @media screen and (max-width: 767px) {
