@@ -33,13 +33,13 @@ export const WorkRow = styled(Row)`
 `;
 
 export const WorkItem = styled(Col)`
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
+  // margin-bottom: 30px;
+  // display: flex;
+  // flex-direction: column;
   
-  @media screen and (max-width: 992px){
-    padding: 20px;
-  }
+  // @media screen and (max-width: 992px){
+  //   padding: 20px;
+  // }
 `;
 
 export const WorkLink = styled.div`
@@ -65,8 +65,9 @@ export const WorkImage = styled.img`
 
 export const WorkTitle = styled.div`
   font-size: 1.3rem;
-  color: #017cff;
+  color: #000;
   padding-top: .125rem;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 767px){
     display: none;

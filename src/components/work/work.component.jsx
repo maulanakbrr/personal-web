@@ -17,30 +17,51 @@ const Work = () => {
           <Desc>See my latest works. <a href="https://github.com/maulanakbrr" target='_blank' rel="noreferrer">Click here to see more on github.</a></Desc>
         </Col>
       </Row>
-      <Fade top delay={200} duration={1300}>
-        <Row className='mr-0 ml-0'>
-          <WorkItem sm={4}>
-            <WorkLink href="http://mlbr.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <WorkImage src={process.env.PUBLIC_URL + '/images/mlbr-2.jpg'} alt=""/>
-            </WorkLink>
-            <WorkTitle>MLBR</WorkTitle>
-            <p className='text-center my-2'>
-              My personal website
+      {/* <Fade top delay={200} duration={1300}> */}
+        <Row className='mr-0 ml-0' style={{ width: '100%' }}>
+          <WorkItem sm={4} style={{ textAlign: 'left' }}>
+            <WorkTitle>Kopra by Mandiri</WorkTitle>
+
+            <p style={{ textAlign: 'justify' }}> 
+              Kopra by Mandiri is wholesale digital super platform. This service is to accommodate the increasingly dynamic needs and ecosystem of wholesale customers, which are the existing core-business of Bank Mandiri. I worked on some features like virtual assistant, feature form registrations and many more.
             </p>
+
+            <a href="https://kopra.bankmandiri.co.id/" target='_blank' rel="noopener noreferrer">
+              Go to project
+            </a>
+
+            
           </WorkItem>
 
-          <WorkItem sm={4}>
-            <WorkLink href="https://rollogreen.com/" target="_blank" rel="noopener noreferrer">
-              <WorkImage src={process.env.PUBLIC_URL + '/images/rollogreen-2.jpg'} alt=""/>
-            </WorkLink>
-            <WorkTitle>Rollogreen</WorkTitle>
-            <p className='text-center my-2'>
-              Website to sell lands and houses <br/>
-              (Client's project)
+          <WorkItem sm={4} style={{ textAlign: 'left' }}>
+            <WorkTitle>Beri Benih</WorkTitle>
+
+            <p style={{ textAlign: 'justify' }}> 
+              Company profile and e-commerce web.
             </p>
+
+            <a href="https://beribenih-frontend.vercel.app/" target='_blank' rel="noopener noreferrer">
+              Go to project
+            </a>
+
+            
           </WorkItem>
 
-          <WorkItem sm={4}>
+          <WorkItem sm={4} style={{ textAlign: 'left' }}>
+            <WorkTitle>Krown Apparel</WorkTitle>
+
+            <p style={{ textAlign: 'justify' }}> 
+               An e-commerce web who focused on selling clothes.
+            </p>
+
+            <a href="https://krown-apparel.herokuapp.com/" target='_blank' rel="noopener noreferrer">
+              Go to project
+            </a>
+
+            
+          </WorkItem>
+
+          {/* <WorkItem sm={4}>
             <WorkLink href="https://krown-apparel.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <WorkImage src={process.env.PUBLIC_URL + '/images/krown-2.jpg'} alt=""/>
             </WorkLink>
@@ -48,9 +69,9 @@ const Work = () => {
             <p className='text-center my-2'>
               Ecommerce web app for clothing line <br/> (dummy project)
             </p>
-          </WorkItem>
+          </WorkItem> */}
         </Row>
-      </Fade>
+      {/* </Fade> */}
     </WorkContainer>
   );
 }

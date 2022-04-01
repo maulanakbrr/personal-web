@@ -22,7 +22,7 @@ const Professional = () => {
           <h3>Front-end</h3>
           <Fade top duration={1500}>
             <p>
-              HTML, CSS, JavaScript, Sass, Bootstrap, Antd, Semantic, Node.js, React, Next, Redux, Git, npm, Yarn, Vercel, Heroku, styled components
+              HTML, CSS, JavaScript, Sass, Bootstrap, Antd, Semantic, Node.js, React, Next, Redux, Git, Bitbucket, npm, Yarn, Vercel, Heroku, styled components
             </p>
           </Fade>
           {/* <Container fluid>
