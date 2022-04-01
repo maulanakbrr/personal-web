@@ -20,45 +20,45 @@ const Work = () => {
       {/* <Fade top delay={200} duration={1300}> */}
         <Row className='mr-0 ml-0' style={{ width: '100%' }}>
           <WorkItem sm={4} style={{ textAlign: 'left' }}>
-            <WorkTitle>Kopra by Mandiri</WorkTitle>
+            <Fade top delay={100} duration={1300}>
+              <WorkTitle>Kopra by Mandiri</WorkTitle>
 
-            <p style={{ textAlign: 'justify' }}> 
-              Kopra by Mandiri is wholesale digital super platform. This service is to accommodate the increasingly dynamic needs and ecosystem of wholesale customers, which are the existing core-business of Bank Mandiri. 
-            </p>
+              <p style={{ textAlign: 'justify' }}> 
+                Kopra by Mandiri is wholesale digital super platform. This service is to accommodate the increasingly dynamic needs and ecosystem of wholesale customers, which are the existing core-business of Bank Mandiri. 
+              </p>
 
-            <a href="https://kopra.bankmandiri.co.id/" target='_blank' rel="noopener noreferrer">
-              Go to project
-            </a>
-
-            
+              <a href="https://kopra.bankmandiri.co.id/" target='_blank' rel="noopener noreferrer">
+                Go to project
+              </a>
+            </Fade>           
           </WorkItem>
 
           <WorkItem sm={4} style={{ textAlign: 'left' }}>
-            <WorkTitle>Beri Benih</WorkTitle>
+            <Fade top delay={200} duration={1300}>
+              <WorkTitle>Beri Benih</WorkTitle>
 
-            <p style={{ textAlign: 'justify' }}> 
-              Company profile and e-commerce web.
-            </p>
+              <p style={{ textAlign: 'justify' }}> 
+                Company profile and e-commerce web.
+              </p>
 
-            <a href="https://beribenih-frontend.vercel.app/" target='_blank' rel="noopener noreferrer">
-              Go to project
-            </a>
-
-            
+              <a href="https://beribenih-frontend.vercel.app/" target='_blank' rel="noopener noreferrer">
+                Go to project
+              </a>
+            </Fade>
           </WorkItem>
 
           <WorkItem sm={4} style={{ textAlign: 'left' }}>
-            <WorkTitle>Krown Apparel</WorkTitle>
+            <Fade top delay={300} duration={1300}>
+              <WorkTitle>Krown Apparel</WorkTitle>
 
-            <p style={{ textAlign: 'justify' }}> 
-               An e-commerce web who focused on selling clothes.
-            </p>
+              <p style={{ textAlign: 'justify' }}> 
+                An e-commerce web who focused on selling clothes.
+              </p>
 
-            <a href="https://krown-apparel.herokuapp.com/" target='_blank' rel="noopener noreferrer">
-              Go to project
-            </a>
-
-            
+              <a href="https://krown-apparel.herokuapp.com/" target='_blank' rel="noopener noreferrer">
+                Go to project
+              </a>
+            </Fade>
           </WorkItem>
 
           {/* <WorkItem sm={4}>
