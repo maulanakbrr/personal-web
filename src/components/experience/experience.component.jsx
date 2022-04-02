@@ -20,8 +20,8 @@ const Experience = () => {
           <Fade bottom delay={100} duration={1400}>
             <ExperienceJob>Front-end Developer</ExperienceJob>
             <h6>PT. Infracom Technology | May 2021 - Now</h6>
-            <p>I worked on Kopra by Mandiri. I developed features like virtual assistant, feature form registrations and many more.</p>
-            <p>Project: Kopra by Mandiri</p>
+            <p>I worked on Kopra by Mandiri. I used React.js, Antd, Next.Js for Front-end framework. For version control I used Bitbucket. I also used third parties and libraries like redux, axios, styled components, react-router, and Google API. I developed features like virtual assistant, feature form registrations and many more.</p>
+            <p style={{ marginBottom: '0' }}>Project: Kopra by Mandiri</p>
           </Fade>
         </ExperienceItem>
 
@@ -29,8 +29,8 @@ const Experience = () => {
           <Fade bottom delay={100} duration={1400}>
             <ExperienceJob>Web Developer</ExperienceJob>
             <h6>Self-employed | Jul 2020 - Now</h6>
-            <p>I Work on projects provided by client by applying innovative and creative ideas for each project that is done. Standarized all output with new, responsive mobile first-approach and strategy.</p>
-            <p>Project: krown-apparel, Beribenih, Rollogreen</p>
+            <p>I Work on projects provided by client by applying innovative and creative ideas for each project that is done. Standarized all output with new, responsive mobile first-approach and strategy. I used techs like React.js, Next.js, Bootstrap and Git for develop them.</p>
+            <p style={{ marginBottom: '0' }}>Project: krown-apparel, Beribenih, Rollogreen</p>
           </Fade>
         </ExperienceItem>
 
@@ -39,7 +39,7 @@ const Experience = () => {
             <ExperienceJob>Web Developer</ExperienceJob>
             <h6>CV. Teknologi Kreatif Indonesia | Oct 2018 - Jun 2019</h6>
             <p>I worked on projects using Laravel.</p>
-            <p>Project: Pilarjuanda</p>
+            <p style={{ marginBottom: '0' }}>Project: Pilarjuanda</p>
           </Fade>
         </ExperienceItem>
 

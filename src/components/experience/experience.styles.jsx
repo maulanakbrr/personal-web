@@ -7,6 +7,7 @@ export const ExperienceContainer = styled(Container)`
   justify-content: center;
   flex-direction: column;
   padding-top: 50px;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 992px){
     padding-top: 50px;
