@@ -19,7 +19,7 @@ const Work = () => {
       </Row>
       {/* <Fade top delay={200} duration={1300}> */}
         <Row className='mr-0 ml-0' style={{ width: '100%' }}>
-          <WorkItem sm={4} style={{ textAlign: 'left' }}>
+          <WorkItem xs={12} md={4} style={{ textAlign: 'left' }} className='mb-3'>
             <Fade top delay={100} duration={1300}>
               <WorkTitle>Kopra by Mandiri</WorkTitle>
 
@@ -33,7 +33,7 @@ const Work = () => {
             </Fade>           
           </WorkItem>
 
-          <WorkItem sm={4} style={{ textAlign: 'left' }}>
+          <WorkItem xs={12} md={4} style={{ textAlign: 'left' }} className='mb-3'>
             <Fade top delay={200} duration={1300}>
               <WorkTitle>Beri Benih</WorkTitle>
 
@@ -47,7 +47,7 @@ const Work = () => {
             </Fade>
           </WorkItem>
 
-          <WorkItem sm={4} style={{ textAlign: 'left' }}>
+          <WorkItem xs={12} md={4} style={{ textAlign: 'left' }} className='mb-3'>
             <Fade top delay={300} duration={1300}>
               <WorkTitle>Krown Apparel</WorkTitle>
 

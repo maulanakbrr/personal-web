@@ -69,9 +69,9 @@ export const WorkTitle = styled.div`
   padding-top: .125rem;
   margin-bottom: 1rem;
 
-  @media screen and (max-width: 767px){
-    display: none;
-  }
+  // @media screen and (max-width: 767px){
+  //   display: none;
+  // }
 
   @media screen and (max-width: 575px){
     display: block;
